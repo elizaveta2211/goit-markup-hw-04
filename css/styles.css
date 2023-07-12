@@ -1,0 +1,341 @@
+/* Common styles */
+:root {
+    --iris-cl: #4D5AE5;
+    --ocean-cl: #404BBF;
+    --navyblue-cl: #2E2F42;
+    --green-cl: #31D0AA;
+    --slate-cl: #434455;
+    --lightslate-cl: #8E8F99;
+    --cornflower-cl: #E7E9FC;
+    --cloud-cl: #F4F4FD;
+    --white-cl: #FFFFFF;
+}
+
+/**
+  |============================
+  | Common styles
+  |============================
+*/
+body {
+    font-family: Roboto, sans-serif;
+    background-color: var(--white-cl);
+    color: var(--slate-cl);
+}
+/* reset */
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    color: currentColor;
+}
+
+.button {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+
+}
+img {
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+}
+/* Base styles */
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.title {
+    color: var(--navyblue-cl);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+}
+.subtitle {
+    color: var(--navyblue-cl);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    
+}
+.text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/**
+  |============================
+  | Header styles
+  |============================
+*/
+
+.header {
+    border-bottom: 1px solid var(--cornflower-cl);
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav { 
+    display: flex;
+    align-items: center;
+}
+.header-nav .list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+.header-nav .link {
+    color: var(--navyblue-cl);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+
+}
+.logo.link {
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--iris-cl);
+    text-decoration: none;
+    margin-right: 76px;
+}
+
+.studio-dark {
+    color: var(--navyblue-cl);
+}
+.header-address {
+    font-style: normal;
+    
+}
+.header-address .list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header-address .link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+ 
+.header .link:hover,
+.header .link:focus {
+    color: var(--ocean-cl);
+}
+
+/**
+  |============================
+  | Hero section styles
+  |============================
+*/
+.hero {
+    background-color: var(--navyblue-cl);
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
+.hero-title {
+    color: var(--white-cl);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+    max-width: 496px;
+    margin-bottom: 48px;
+}
+
+.hero .button {
+    background-color: var(--iris-cl);
+    color: var(--white-cl);
+    padding: 16px 32px;
+    border: 0;
+    min-width: 169px;
+}
+.hero .button:hover,
+.hero .button:focus {
+    background-color: var(--ocean-cl);
+}
+
+/**
+  |============================
+  | Benefits section styles
+  |============================
+*/
+.benefits {
+    
+}
+.benefits .list {
+    display: flex;
+    gap: 24px;
+}
+.benefits .item {
+    width: 264px;
+}
+.benefits .subtitle {
+    margin-bottom: 8px;
+}
+/**
+  |============================
+  | Product section styles
+  |============================
+*/
+.product {
+   padding-top: 0; 
+}
+.product .title {
+    margin-bottom: 72px;
+}
+.product .list {
+    display: flex;
+    gap: 24px;
+}
+.product .image {
+    border: 1px solid var(--cornflower-cl);
+}
+/**
+  |============================
+  | Our team section styles
+  |============================
+*/
+
+.team {
+    background-color: var(--cloud-cl);
+}
+.team .title {
+    margin-bottom: 72px;
+}
+.team .list {
+    display: flex;
+    gap: 24px;
+}
+.team .item {
+    background-color: var(--white-cl);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team .subtitle{
+    text-align: center;
+    margin-bottom: 8px;
+}
+.team .text {
+    text-align: center;
+}
+.worker-desc {
+
+    width: 232px;
+    padding: 32px 16px;
+    margin: 0 auto;
+}
+/**
+  |============================
+  | Portfolio Section styles
+  |============================
+*/
+.portfolio {
+    padding-top: 96px;
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+.portfolio .button {
+    background-color: var(--cloud-cl);
+    color: var(--iris-cl);
+    padding: 12px 24px;
+    border: 1px solid var(--cornflower-cl);
+}
+
+.portfolio .button:hover,
+.portfolio .button:focus {
+    color: var(--white-cl);
+    background-color: var(--ocean-cl);
+    border: 1px solid transparent;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+.project-desc {
+    border: 1px solid var(--cornflower-cl);
+    border-top: 0;
+    padding: 32px 16px;
+}
+.project-desc .subtitle {
+    margin-bottom: 8px;
+}
+/**
+  |============================
+  | Footer styles
+  |============================
+*/
+.footer {
+    background-color: var(--navyblue-cl);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.studio-light {
+    color: var(--cloud-cl);
+}
+.footer .logo {
+    margin-bottom: 16px;
+}
+.footer .text {
+    color: var(--cloud-cl);
+    width: 264px;
+}
